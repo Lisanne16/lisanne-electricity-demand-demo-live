@@ -1,0 +1,180 @@
+case_id,model_name,model_id,provider,response,response_len,status,error
+LIVE_DE_h24_01,gpt_oss_20b,openai/gpt-oss-20b,auto,"The forecast sits between the recent 1‑hour lag (36 MW) and the 6‑hour lag (41 MW), reflecting the upward trend in the last few hours.  
+The 24‑hour rolling mean (39 MW) and the high wind share (≈53 % of generation) suggest that the system is still in a high‑renewable period, which keeps the demand from spiking as it would if wind were lower.  
+Because the day is a",367,ok,
+LIVE_DE_h24_02,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_DE_h24_03,gpt_oss_20b,openai/gpt-oss-20b,auto,"The forecast sits just below the 24‑hour rolling mean (≈39 400 MW) and is driven mainly by the recent high demand levels: lag 6 h and lag 12 h are both above 39 000 MW, while the 24‑hour lag is lower (≈33 900 MW) but the short‑term trend is upward.  
+The time‑of‑day features (hour = 4 am, weekday, no holiday) normally signal a low‑to‑moderate load, but the strong wind output (≈9.6 GW total, 49 % share) and the high renewable share (≈74 %) are associated in the training data with a higher overall consumption pattern, so the model keeps the prediction near the recent peak.  
+Finally, the rolling statistics reinforce this",626,ok,
+LIVE_DE_h24_04,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_DE_h24_05,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_DE_h24_06,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model sees a clear upward trend in the last few hours: the 1‑hour lag is already 46 MW above the 24‑hour average (≈40 MW) and the 2‑hour lag is 40 MW, while the 24‑hour lag is only 36 MW",190,ok,
+LIVE_DE_h24_07,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_DE_h24_08,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_DE_h24_09,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_DE_h24_10,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_DE_h24_11,gpt_oss_20b,openai/gpt-oss-20b,auto,"The forecast is driven mainly by the recent upward trend in demand: the last 24 h average is 42.9 GW, but the 1‑hour‑ago value is already 54.7 GW and the 24‑hour‑ago value was 43.6 GW, indicating a clear rise.  
+The lag‑168 h (same time last week) is 59.",254,ok,
+LIVE_DE_h24_12,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_DE_h24_13,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model sees a clear upward trend in the last 24 h: the 1‑, 2‑, 6‑ and 24‑hour lags are",89,ok,
+LIVE_DE_h24_14,gpt_oss_20b,openai/gpt-oss-20b,auto,The model projects a demand of 55.4 GW because the most recent 6‑hour‑ago load (55.5 GW) is almost identical to the,115,ok,
+LIVE_DE_h24_15,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_DE_h24_16,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_DE_h24_17,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_DE_h24_18,gpt_oss_20b,openai/gpt-oss-20b,auto,The model is essentially extrapolating the current high‑load,60,ok,
+LIVE_DE_h24_19,gpt_oss_20b,openai/gpt-oss-20b,auto,"The forecasted demand of 53.6 GW is driven mainly by the recent high‑level consumption pattern: the lag‑1 h demand (54.6 GW) and the 12‑h lag (54.5 GW) are both above the 24‑h rolling mean (46.9 GW), indicating a sustained high‑load period that the model extrapolates forward.  The 24‑h rolling maximum (55.5 GW) and the low 24‑h minimum (35.6 GW) show a wide daily swing, but the current hour (20:00) lies in the evening peak window, so the model keeps the demand near the upper end of the recent range.  Generation‑side signals reinforce this: the total generation 1 h ago (27.4 GW) is lower than the demand, and the share of renewables (55 %) is high, leaving a larger gap that must be filled by dispatchable sources, which tends to keep demand stable.  Finally, the calendar features (weekday, non‑holiday, late‑evening hour) match typical weekday evening peaks, confirming the 53.6 GW estimate.",899,ok,
+LIVE_DE_h24_20,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_DE_h24_21,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_DE_h24_22,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_DE_h24_23,gpt_oss_20b,openai/gpt-oss-20b,auto,"The forecast is driven mainly by the recent demand trend and the time‑of‑day pattern.  
+The lagged values show a clear downward swing",133,ok,
+LIVE_DE_h24_24,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_FR_h24_01,gpt_oss_20b,openai/gpt-oss-20b,auto,"The forecast is essentially a “near‑mean” estimate: the 24‑hour‑ahead demand (35 998 MW) sits almost exactly between the recent lagged values (lag 1 h = 35 925 MW, lag 2 h = 37 677 MW, lag 6 h = 40 727 MW) and the 24‑hour rolling mean (36 074 MW).  
+The early‑morning hour (02:00) on a weekday with no holiday normally carries lower consumption, which is reflected in the low hour‑specific sine/cosine terms and the fact that the rolling minimum over the past 24 h is 30 659 MW.  
+High nuclear output (≈ 37 346 MW) and substantial wind generation (≈ 11 122 MW total) keep the",575,ok,
+LIVE_FR_h24_02,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_FR_h24_03,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_FR_h24_04,gpt_oss_20b,openai/gpt-oss-20b,auto,"The forecast of 35 116 MW is driven mainly by the recent demand trend and the high nuclear base load.  
+The lag‑1 h demand (32 862 MW) and the 24‑h rolling mean (36 236 MW) are both above the 24‑h minimum (30 659 MW) and close to the 24‑h maximum (41 177 MW), indicating a strong upward trend that the model extrapolates 24 h ahead.  
+At 03:00 UTC (05:00 CET) on a weekday in August, the cyclical hour and month encodings (hour_sin ≈ 0.97, month_sin ≈ –0.87) signal a late‑morning period with moderate seasonal demand, while the low solar share (0.0) and high wind share (0.19) reduce the expected renewable contribution, keeping the net load higher.  
+Finally, the high nuclear generation (38 373 MW) and substantial onshore wind (7 883 MW) provide a stable generation base that, combined with the current demand pattern, leads the model to predict a demand of about 35 116 MW for t + 24 h.",891,ok,
+LIVE_FR_h24_05,gpt_oss_20b,openai/gpt-oss-20b,auto,The forecast is driven mainly by the recent demand pattern and the strong generation mix at the forecast,104,ok,
+LIVE_FR_h24_06,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_FR_h24_07,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_FR_h24_08,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_FR_h24_09,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model predicts a 24‑hour‑ahead demand of **46 410 MW** because the most recent consumption is already very high (lag 1 h ≈ 44 341 MW, lag 2 h ≈ 42 668 MW) and the rolling 24‑hour mean (≈ 37 847 MW) is well above the weekly average, signalling a strong upward trend.  
+At 08:00 UTC on a Monday in August,",307,ok,
+LIVE_FR_h24_10,gpt_oss_20b,openai/gpt-oss-20b,auto,The forecast is driven mainly by,32,ok,
+LIVE_FR_h24_11,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_FR_h24_12,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model places the strongest weight on the most recent demand values, especially the 1‑hour‑ago figure (48 630 MW) and the",124,ok,
+LIVE_FR_h24_13,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_FR_h24_14,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_FR_h24_15,gpt_oss_20b,openai/gpt-oss-20b,auto,"The forecast is driven mainly by the very high recent demand levels: lag 1 h and lag 2 h are 49.2 MW and 49.7 MW, respectively, which are close to the 24‑hour rolling maximum of 49.7 MW.  
+At 4 p.m. on a weekday, electricity consumption typically peaks, and the rolling mean of 40.7 MW is already well above the weekly average (41.1 MW).  
+Generation is also at a record high (total ≈ 61.6 MW) with a strong nuclear base (36.4 MW) and a large solar contribution (12.6 MW, 20 % of total), so the supply‑demand gap is small and the model projects a demand near the current high.  
+These combined patterns – recent peak demand, late‑afternoon timing, and high renewable output – lead the model to predict a 24",706,ok,
+LIVE_FR_h24_16,gpt_oss_20b,openai/gpt-oss-20b,auto,"The forecast is anchored in the very recent demand pattern: the lag‑1 h value (48 047 MW) and the lag‑2 h value (49 164 MW) are both near the historical 24‑h peak (49 710 MW),",175,ok,
+LIVE_FR_h24_17,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_FR_h24_18,gpt_oss_20b,openai/gpt-oss-20b,auto,"The forecasted demand of 47 245 MW is driven mainly by the recent high‑level of consumption and the strong solar contribution that is expected to persist into the next day.  
+The lag‑1 h demand (47 171 MW) and the 24‑h rolling mean (41 878 MW) are both well above the weekly average (41 161 MW), indicating a sustained high‑load period.  
+Solar generation at the lag‑1 h (4 531 MW) is a significant share of total generation (≈7.7 %) and, combined with the high onshore wind (7 670 MW), keeps the net load (demand minus renewables) elevated.  
+The hour‑sin and hour‑cos values (−0.97, 0.26) correspond to 7 p.m., a typical peak‑hour in France, while the weekday flag (0) and non‑holiday status (0) confirm that normal weekday patterns apply.  
+Overall, the combination of a recent high demand, strong renewable output that is still high relative to the week’s average, and the typical evening peak hour leads the model to predict a demand of about 47 245 MW.",958,ok,
+LIVE_FR_h24_19,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_FR_h24_20,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model predicts a 24‑hour‑ahead demand of **44 029 MW** because the most recent consumption pattern is already on a downward trend: the 1‑hour lag is 45 103 MW, but the 24‑hour rolling mean is only 42 312 MW, indicating a gradual decline.  
+At 21:00 h on a Monday in August, the typical load is lower than the peak of the day, and the hour‑sine/cosine values confirm that the forecast is made in the evening period when demand usually falls.  
+Generation is high and stable – nuclear (≈37 722 MW) plus onshore wind (≈6 331 MW) and hydro (≈4 376 MW) keep the supply side near the national average",598,ok,
+LIVE_FR_h24_21,gpt_oss_20b,openai/gpt-oss-20b,auto,"The forecast is driven mainly by the recent upward trend in demand: lag 2 h (45 102 MW) and lag 6 h (48 047 MW) are well above the 24‑hour lag (40 648 MW) and the 24‑hour rolling mean (42 448 MW), signalling a rising load.  
+At 10 p.m. (hour 22) the cyclical sine/cosine terms and the high hour‑specific demand pattern for late‑evening hours push the prediction slightly above the 24‑hour average.  
+Generation is dominated by nuclear (≈ 38 000 MW) and onshore wind (≈ 6 000 MW), with solar and other renewables contributing only a few percent, so the supply‑side mix does not offset the high demand trend.  
+Consequently, the model outputs a 24‑hour‑ahead demand of about 44 123 MW, a value that sits between the recent peaks and the rolling",742,ok,
+LIVE_FR_h24_22,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model is pulling most of its signal from the recent demand trajectory and the current generation mix.  
+The last 12 h of demand has been very high (≈ 47 GW",159,ok,
+LIVE_FR_h24_23,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_FR_h24_24,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_ES_h24_01,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_ES_h24_02,gpt_oss_20b,openai/gpt-oss-20b,auto,The model places the 24‑hour‑ahead load near the recent low‑hour level: the lag‑1 h demand (23 289 MW) and the,110,ok,
+LIVE_ES_h24_03,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_ES_h24_04,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model predicts a 24‑hour‑ahead demand of **23 339.8 MW** because the most recent consumption pattern and the current generation mix point to a modest drop from the 24‑hour rolling mean.  
+- The lag‑1 h and lag‑",214,ok,
+LIVE_ES_h24_05,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_ES_h24_06,gpt_oss_20b,openai/gpt-oss-20b,auto,The model projects a demand of 26.3 GW because the most recent consumption is already high (lag 1 h = 25.2 GW,109,ok,
+LIVE_ES_h24_07,gpt_oss_20b,openai/gpt-oss-20b,auto,"The forecast is driven mainly by the recent and weekly demand patterns: the 12‑hour lag (28.7 GW) and the 7‑day rolling mean (28.98 GW) are both near the national peak, indicating a sustained high‑load period.  The hour‑of‑day and weekday signals (8 a.m. on a Monday, no holiday) reinforce the expectation of a normal morning peak, while the cyclical sine/cosine terms confirm the time‑of‑day effect.  Generation at the origin is also high (≈25.5 GW total, with a 36.9 % renewable share), so the system is operating near capacity and the load is likely to stay close to the generation level.  Together, these features lead the model to predict a demand of about 28.6 GW for the next 24 hours.",692,ok,
+LIVE_ES_h24_08,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_ES_h24_09,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_ES_h24_10,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_ES_h24_11,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_ES_h24_12,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_ES_h24_13,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_ES_h24_14,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_ES_h24_15,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_ES_h24_16,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model predicts a 24‑hour‑ahead demand of **29 338 MW** because the most recent 1‑hour lag shows a high‑generation period dominated by renewables: solar (18 415 MW) and wind (≈8 100 MW) together supply about 73 % of the 37 699 MW total generation. This high supply, combined with a relatively low nuclear output (6 949 MW) and negligible coal, pushes the net load down. The lag‑1 h demand (30 486 MW) is already above the 24‑hour rolling mean (27 817 MW) but the trend is falling, as indicated by the lower 12‑hour lag (22 871 MW) and the rolling minimum (22 440 MW). The forecast origin",590,ok,
+LIVE_ES_h24_17,gpt_oss_20b,openai/gpt-oss-20b,auto,"The forecasted 30 190 MW is driven mainly by the very high recent demand (lag 1 h = 30 815 MW) and the strong 24‑hour rolling mean (28 029 MW), indicating that the system is still operating near a peak.  
+At 18:00 local time on a weekday, the demand curve is still rising but has begun to level off, so the model expects a modest decline from the 1‑hour‑ago value.  
+The exceptionally high solar share (≈ 46 %) and substantial wind output (≈ 23 %) raise the total generation to 37 674 MW, which offsets much of the load and keeps the net demand below the recent peak.  
+Finally, the calendar features (Monday, non‑holiday, non‑weekend) and the cyclical hour encoding confirm that the demand pattern is typical for this time of day, supporting the predicted value.",763,ok,
+LIVE_ES_h24_18,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_ES_h24_19,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_ES_h24_20,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model sees a strong upward trend in the last 24 h: lag 1 h is 31.7 GW, lag 2 h 31.6 GW, while the 24‑h‑ago value is only 30.1 GW, and the 7‑day rolling mean is 28.8 GW. At 21:00 h on a Monday in August, the typical peak‑hour demand is high, and the calendar features (hour sin/cos, month sin/cos) reinforce a summer‑peak pattern.",333,ok,
+LIVE_ES_h24_21,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model sees that the most recent hour’s demand (32 428 MW) is already above the 24‑hour‑ago level (29 196 MW) and the 24‑hour rolling mean (28 588 MW), so it expects a gradual decline rather than a peak.  
+At 10 p.m. on a weekday, consumption is typically lower than during the day, and the hour‑sin/cos terms (–0.5/0.866) encode this late‑night period.  
+Generation is high (total 33 158 MW) with strong nuclear (6 972 MW) and gas (10 038 MW) output, but the renewable share (42 %) and the low solar output (437 MW) suggest that the system is already operating near capacity, limiting further demand growth.  
+Combining the lagged demand trend, the late‑night hour effect, and the high but stable generation mix, the forecast settles on a moderate 30 551 MW for the next day‑ahead hour.",790,ok,
+LIVE_ES_h24_22,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_ES_h24_23,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_ES_h24_24,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_PT_h24_01,gpt_oss_20b,openai/gpt-oss-20b,auto,"The forecast is anchored mainly in the recent demand pattern: the 24‑hour rolling mean (5108 MW) and the 2‑hour lag (5258 MW) are very close to the predicted 5132 MW, while the 1‑hour lag (4975 MW) is slightly lower, suggesting a small upward trend.  
+The generation mix shows a high wind share (≈62 %) but negligible solar, nuclear, and coal, leaving gas (570 MW) and other sources to cover the remaining load; the total generation 1 h ago (4867 MW) is about 265 MW below the demand, consistent with the predicted net load.  
+Calendar features indicate a weekday morning (hour 1, day 0, no holiday), a period that historically has moderate demand, and the cyclical sine/cosine terms confirm the time-of-day pattern.  
+Overall, the combination of a high recent demand trend, a generation mix that still leaves a",811,ok,
+LIVE_PT_h24_02,gpt_oss_20b,openai/gpt-oss-20b,auto,The model is pulling most of its signal from the recent demand trend and the time‑of‑day,88,ok,
+LIVE_PT_h24_03,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_PT_h24_04,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_PT_h24_05,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_PT_h24_06,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model sees a clear downward trend in the last 12 hours – the demand fell from 5,547 MW at lag 12 h to 4,505 MW just one hour before the forecast origin – and the 24‑hour rolling mean of 5,118 MW is only slightly above the predicted 4,991 MW.  
+At 6 a.m.",257,ok,
+LIVE_PT_h24_07,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_PT_h24_08,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model predicts a high 24‑hour‑ahead demand of 6 045 MW mainly because the most recent consumption is already close to that level – the 12‑hour lag is 6 050 MW and the 1‑hour lag is 5 159 MW, both well above the 24‑hour rolling mean of 5 172 MW.  
+The day is a weekday (hour 8, Monday, no holiday) when industrial and commercial activity is typically high, and the sine/cosine encodings confirm a morning period that usually sees a demand uptick.  
+Generation at the forecast origin is dominated by wind (≈ 3.6 GW) and gas (≈ 0.6 GW), with a modest solar contribution (≈ 0.",576,ok,
+LIVE_PT_h24_09,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model sees a strong upward trend in recent demand: lag 1 h is 5.76 GW, lag 12 h is 5.90 GW, and the 24‑h rolling mean is 5.22 GW, all well above the 24‑h rolling max of 6.05 GW, indicating a rising load curve.  
+At 9 a.m. on a weekday, the calendar features (hour = 9, dayofweek = 0, is_weekend = 0, is_holiday = 0) match a typical morning peak, and the sine/cosine encodings confirm the time is in the mid‑morning window where demand usually climbs.  
+Generation at the origin is 6.12 GW, with a high wind share (0.62",522,ok,
+LIVE_PT_h24_10,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_PT_h24_11,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_PT_h24_12,gpt_oss_20b,openai/gpt-oss-20b,auto,"The forecast is driven mainly by the very high recent demand (lag 1 h = 6576 MW, lag 2 h = 6509 MW) and the fact that the day is a weekday at noon, a period that normally sees strong consumption.  The rolling‑24‑h mean (≈5368 MW) is lower, so the model expects a modest decline from the current peak, which is reflected in the 24‑h‑ahead prediction of 6531 MW.  At the same time, the generation mix shows an exceptionally high renewable share (≈90 % of",452,ok,
+LIVE_PT_h24_13,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_PT_h24_14,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_PT_h24_15,gpt_oss_20b,openai/gpt-oss-20b,auto,"The forecast of 6 355 MW is driven mainly by the recent demand trend and the high renewable generation mix.  
+The lag‑1 h demand (6 301 MW) and the 24‑h rolling mean (5 484 MW) are both close to the predicted value, indicating a stable, slightly rising load.  
+The very high wind share (≈63 %) and solar share (≈21 %) in the 1‑h lag generation (total 6 491 MW) reduce the need for dispatchable fossil plants, keeping the net load lower than the week‑ago peak (6 593 MW).  
+The low nuclear, coal, and oil output (all zero) and the modest gas generation (638 MW) further constrain the load, while the moderate hydro and biomass contributions keep the system balanced.  
+Overall, the combination of a high renewable generation mix, a recent upward demand trend, and the absence of large thermal baseloads explains the predicted 6 355 MW demand.",841,ok,
+LIVE_PT_h24_16,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model predicts a 24‑hour‑ahead load of 6 364 MW because the most recent demand (lag 1 h = 6 270 MW, lag 2 h = 6 301 MW, lag 6 h = 6 510 MW) is already at a high level and the 24‑hour rolling mean (5 526 MW) and rolling maximum (6 576 MW) confirm that the system is operating near its peak.  
+At 15:00 h on a Monday in August, the typical daily load curve is still rising, and the hour‑sine/cosine encodings place the forecast time in the late‑afternoon peak window.  
+Generation 1 h ago was 6 280 MW, dominated by wind (60 %) and solar (24 %) with a",553,ok,
+LIVE_PT_h24_17,gpt_oss_20b,openai/gpt-oss-20b,auto,"The forecast is driven mainly by the very high recent demand levels: the last hour was 6,283 MW, the 6‑hour lag was 6,576 MW, and the 24‑hour rolling mean is 5,571 MW, all well above the long‑term average of 5,770 MW.  
+At 5 p.m. on a Monday in August, the hour‑of‑day and seasonal sine/cosine terms signal a typical peak‑hour pattern, while the month‑sine/cosine values place the day in the",391,ok,
+LIVE_PT_h24_18,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_PT_h24_19,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model projects a strong evening peak because the most recent demand (lag 1 h = 6359 MW, lag 6 h = 6365 MW) is already close to the 24‑hour",142,ok,
+LIVE_PT_h24_20,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_PT_h24_21,gpt_oss_20b,openai/gpt-oss-20b,auto,"The forecasted 6.79 GW is driven mainly by the recent demand trend: the lag‑1 h value (6.92 GW) is higher than the 24‑h lag (5.90 GW) and the 12‑h lag (6.19 GW), indicating a rising load curve that the model extrapolates forward. The rolling statistics reinforce this: a 24‑h mean of 5.72 GW and a high 24‑h max of 6.92 GW suggest the system is operating near its peak, while the relatively low 24‑h min (4.39 GW) shows a wide swing that the model expects to continue. Calendar features (hour = 21, weekday, no holiday) point to a typical evening peak period, and the sine/cosine encodings confirm the time of day is in the late‑night/early‑morning transition, a period historically associated with higher demand. Generation‑side inputs show that renewable output (solar negligible, wind ~2.9 GW, hydro ~3.7 GW) is already covering a large share of the load, leaving a net demand that aligns with the predicted 6.79 GW. Thus, the combination of rising recent demand, high rolling peaks, and typical evening‑hour conditions leads the model to forecast a demand close to 6.8 GW.",1076,ok,
+LIVE_PT_h24_22,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_PT_h24_23,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_PT_h24_24,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_IE_h24_01,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_IE_h24_02,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_IE_h24_03,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model is essentially extrapolating the recent trend: the 1‑hour‑ago demand (3 255 MW) and the 24‑hour‑ago demand (3 328 MW) are very close, and the rolling 24‑hour mean (3 524 MW) is only slightly higher, so the forecast settles near the current level.  
+The early‑morning hour (",283,ok,
+LIVE_IE_h24_04,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_IE_h24_05,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model is essentially projecting the demand that was seen 24 hours ago (3192 MW) forward to the next day, but it adjusts it downward because the current hour (5 a.m.) and weekday (Monday) normally have lower consumption than the 12‑hour‑ago peak (3602 MW). The rolling‑mean over the past 24 hours (3514 MW) and the high 24‑hour standard deviation (250 MW) indicate that the system is in a relatively high‑variance period, so the forecast is pulled toward the recent 24‑hour average rather than the higher 12‑hour peak. The generation mix shows a very low renewable share (≈22 %) and a high gas share (≈57 %), which is typical for early‑morning periods when demand is still rising but not yet at its daily peak, reinforcing the moderate demand estimate. Finally, the lack of a holiday and the fact that it is a weekday mean that the demand curve",847,ok,
+LIVE_IE_h24_06,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model is pulling the upward trend from the 12‑hour lag (≈3.79 GW) and the high 24‑hour rolling mean (≈3.51 GW), both of which sit above the 1‑hour lag (≈3.20 GW).  The early‑morning hour (6 a.m.) on a weekday in August is a period when demand normally climbs after the overnight dip, and the sine/cosine encodings confirm the day‑time cycle.  Generation at the origin is dominated by gas (≈1.0 GW) and wind (≈0.",415,ok,
+LIVE_IE_h24_07,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model is projecting a strong morning ramp‑up.  
+The 12‑hour‑ago demand (3,931 MW) is already near the 24‑hour peak (3,963 MW) and the 1‑hour lag is still high (3,399 MW), signalling an upward trend that the",210,ok,
+LIVE_IE_h24_08,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model projects a high load of 4 186 MW because the most recent demand is already near the national peak (lag 1 h ≈ 3 758 MW, lag 12 h ≈ 3 946 MW) and the 24‑hour rolling mean (≈ 3 542 MW) is well above the 48‑hour average, signalling an upward trend.  
+At 07:00 on a weekday (hour 8, day 0, not a holiday) the typical morning peak is expected again, and the forecast horizon of +24 h lands on the same time next",415,ok,
+LIVE_IE_h24_09,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_IE_h24_10,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_IE_h24_11,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model projects a demand of 4 117 MW because the most recent consumption is already near the 24‑hour peak (lag 2 h = 4 101 MW, rolling_max_24h = 4 101 MW) and the rolling mean over the past day (3 594 MW) is rising.  
+At 11 a.m. on a weekday with no holiday, electricity use typically climbs toward midday peaks, and the cyclical hour features (sin = 0.259, cos = ‑0.966) reinforce this pattern.  
+Generation lagged one hour is only 1 373 MW, far below the demand, indicating that the system is still importing power; the high gas share (0.59) and low renewable share (0.20) suggest that the supply mix cannot yet meet the current load.  
+Together, the upward trend in recent demand, the time‑of‑day effect, and the supply‑shortfall signal a forecast near the historical maximum,",782,ok,
+LIVE_IE_h24_12,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_IE_h24_13,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model is projecting a near‑peak demand of about 4 MW because the recent demand history is already high and trending upward.  
+The 1‑hour lag is 3.76 GW, the 2‑hour",167,ok,
+LIVE_IE_h24_14,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_IE_h24_15,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model is projecting a demand close to the recent peak of 4,101 MW that occurred six hours before the forecast origin.  
+The 3 pm hour on a weekday in August is a typical “high‑load” period, and the rolling‑24‑hour mean of 3,627 MW and the rolling‑24‑hour max of 4,101 MW reinforce that the system is already operating near its upper range.  
+Generation at the origin is only 1,430 MW, with renewables providing roughly 48 % and the remaining 52 % coming from fossil fuels; this low supply relative to the high demand trend pushes the net load upward.  
+Consequently, the model",580,ok,
+LIVE_IE_h24_16,gpt_oss_20b,openai/gpt-oss-20b,auto,"The model is projecting a near‑peak demand because the most recent observations already sit close to the historical maximum.  
+The lagged demand values (lag 1h ≈ 3760 MW, lag 6h ≈ 3940 MW, lag 24h ≈ 3440 MW",206,ok,
+LIVE_IE_h24_17,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_IE_h24_18,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_IE_h24_19,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_IE_h24_20,gpt_oss_20b,openai/gpt-oss-20b,auto,The model is essentially “copying” the demand that was seen at the same hour,76,ok,
+LIVE_IE_h24_21,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_IE_h24_22,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,
+LIVE_IE_h24_23,gpt_oss_20b,openai/gpt-oss-20b,auto,"The forecast is essentially the 24‑hour‑ahead average of the last 24 h of demand, which is 3 760 MW, so the model naturally predicts a value close to that (3 729 MW).  
+The most recent hours show a",197,ok,
+LIVE_IE_h24_24,gpt_oss_20b,openai/gpt-oss-20b,auto,,0,ok,

@@ -1,0 +1,9 @@
+llm,shap_model,n_cases,mean_feature_agree,median_feature_agree,mean_direction_agree,median_direction_agree,n_with_dir_claims
+deepseek,LightGBM,120,53.69,60.02,36.56,0.0,16
+deepseek,XGBoost,120,54.74,61.1,40.98,0.0,19
+gemma,LightGBM,120,16.31,10.06,50.0,50.0,8
+gemma,XGBoost,120,17.44,13.37,51.0,53.99,8
+gpt_oss,LightGBM,120,7.21,0.0,37.99,0.0,5
+gpt_oss,XGBoost,120,7.68,0.0,34.17,0.0,5
+qwen,LightGBM,120,25.92,18.4,56.98,100.0,32
+qwen,XGBoost,120,27.45,19.63,61.85,100.0,34
